@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hopebridge Health and Education Foundation shares useful health, education, community and opportunity updates.">
+  <meta name="theme-color" content="#0b5d50">
+  <title>Hopebridge Health & Education Foundation | News & Updates</title>
+  <style>
+    :root{--green:#0b5d50;--green2:#13816d;--gold:#f2bd58;--ink:#152b2a;--muted:#61716f;--paper:#f5f8f6;--line:#e0e9e4;--white:#fff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+    a{color:inherit} .wrap{width:min(1120px,92%);margin:auto}
+    .topbar{background:#073e36;color:#e8f6ef;font-size:.88rem;padding:8px 0}.topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    header{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+    .nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}.logo{width:48px;height:48px;border-radius:15px;background:var(--green);display:grid;place-items:center;color:white;font-weight:900;font-size:1.15rem;flex-shrink:0;box-shadow:inset 0 0 0 3px #ffffff22}
+    .brand strong{display:block;line-height:1.15;font-size:1rem}.brand small{display:block;color:var(--muted);font-size:.76rem;margin-top:4px}
+    nav{display:flex;align-items:center;gap:20px} nav a{text-decoration:none;font-weight:700;font-size:.92rem} nav a:hover{color:var(--green2)}
+    .menu-btn{display:none;border:1px solid var(--line);background:white;border-radius:9px;padding:9px 12px;font-size:1rem}
+    .hero{background:linear-gradient(115deg,#073e36 0%,#0b5d50 55%,#13816d 100%);color:white;padding:60px 0 52px;overflow:hidden;position:relative}
+    .hero:after{content:"";position:absolute;width:340px;height:340px;border:1px solid #ffffff25;border-radius:50%;right:-90px;top:-130px;box-shadow:0 0 0 35px #ffffff08,0 0 0 75px #ffffff06}
+    .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:36px;align-items:center;position:relative;z-index:1}
+    .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.76rem;font-weight:800;color:var(--gold)}
+    h1{font-size:clamp(2.1rem,5vw,3.7rem);line-height:1.08;letter-spacing:-.04em;margin:13px 0 18px;max-width:720px}
+    .hero p{font-size:1.08rem;color:#e0f0e9;max-width:620px;margin:0 0 24px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:10px;padding:12px 17px;text-decoration:none;font-weight:800;cursor:pointer;font-size:.95rem}
+    .btn-gold{background:var(--gold);color:#25352d}.btn-light{background:#ffffff18;border:1px solid #ffffff70;color:white}.btn-green{background:var(--green);color:white}.btn:hover{transform:translateY(-1px)}
+    .hero-card{background:#ffffff12;border:1px solid #ffffff32;border-radius:22px;padding:25px;backdrop-filter:blur(3px)}
+    .hero-card .big{font-size:2.3rem}.hero-card h2{margin:8px 0;font-size:1.25rem}.hero-card p{font-size:.94rem;margin:0;color:#e0f0e9}
+    .quick-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.tag{display:inline-block;border-radius:999px;background:#e6f4ed;color:#0b5d50;font-size:.78rem;font-weight:800;padding:6px 10px}
+    section{padding:48px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:22px}.section-head h2{font-size:clamp(1.55rem,3vw,2.15rem);line-height:1.2;margin:0}.section-head p{margin:7px 0 0;color:var(--muted)}
+    .filters{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 22px}.filter{border:1px solid var(--line);background:white;border-radius:999px;padding:8px 13px;font-weight:700;color:#50615c;cursor:pointer}.filter.active,.filter:hover{background:var(--green);border-color:var(--green);color:white}
+    .search{width:min(100%,280px);border:1px solid var(--line);border-radius:10px;padding:11px 13px;font:inherit;background:white}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.article{background:white;border:1px solid var(--line);border-radius:17px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 6px 18px #153e3010}
+    .article-art{min-height:145px;padding:18px;display:flex;align-items:end;background:linear-gradient(135deg,#d8eee3,#f8e8c6);position:relative;overflow:hidden}.article-art:before{content:"";position:absolute;width:170px;height:170px;border-radius:50%;background:#ffffff70;right:-28px;top:-68px}
+    .article-art span{position:relative;background:#ffffffd9;color:var(--green);font-size:.75rem;font-weight:900;padding:7px 10px;border-radius:999px}
+    .article-body{padding:18px;display:flex;flex-direction:column;flex:1}.meta{font-size:.78rem;color:var(--muted);font-weight:700}.article h3{font-size:1.15rem;line-height:1.35;margin:9px 0}.article p{color:var(--muted);font-size:.92rem;margin:0 0 15px}.read{margin-top:auto;color:var(--green);font-weight:900;text-decoration:none;cursor:pointer;border:0;background:none;padding:0;text-align:left;font:inherit}.read:hover{text-decoration:underline}
+    .empty{padding:30px;border:1px dashed #b7c9bf;border-radius:14px;color:var(--muted);text-align:center;grid-column:1/-1}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}.about-panel{background:#e7f2ec;border-radius:22px;padding:28px}.about-panel h3{margin-top:0;font-size:1.35rem}.about-panel p{color:#4d625b}.pillars{display:grid;grid-template-columns:1fr 1fr;gap:12px}.pillar{background:white;border:1px solid var(--line);border-radius:13px;padding:15px}.pillar strong{display:block;color:var(--green);margin-bottom:4px}.pillar span{font-size:.88rem;color:var(--muted)}
+    .contact{background:#103f37;color:white}.contact .section-head p{color:#d1e4dc}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}.contact-card{border:1px solid #ffffff30;background:#ffffff0d;border-radius:18px;padding:24px}.contact-card p{color:#d1e4dc}.contact-list{display:grid;gap:12px;margin-top:18px}.contact-list a{color:white;text-decoration:none;font-weight:700}.contact-list a:hover{text-decoration:underline}
+    form{display:grid;gap:12px} label{font-size:.86rem;font-weight:800} input,textarea{font:inherit;width:100%;padding:12px;border:1px solid #d9e5df;border-radius:9px;background:white;color:var(--ink)} textarea{min-height:110px;resize:vertical}.form-note{font-size:.8rem;color:#d1e4dc;margin:0}
+    footer{background:#07332d;color:#c6d9d1;padding:24px 0;font-size:.85rem}footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .wa{position:fixed;right:18px;bottom:18px;z-index:8;background:#20b968;color:white;text-decoration:none;font-weight:900;border-radius:999px;padding:13px 17px;box-shadow:0 8px 24px #092b2050;display:flex;gap:8px;align-items:center}
+    .modal{display:none;position:fixed;inset:0;background:#061d19b8;z-index:20;padding:18px;overflow:auto}.modal.open{display:grid;place-items:center}.modal-content{width:min(720px,100%);background:white;border-radius:18px;padding:clamp(22px,4vw,36px);position:relative}.close{position:absolute;right:15px;top:12px;border:0;background:#edf4ef;border-radius:8px;padding:8px 11px;font-weight:900;cursor:pointer}.modal-content h2{line-height:1.25;margin-top:10px}.modal-content p{color:#52635d}.notice{background:#fff6df;border:1px solid #f2d99a;border-radius:12px;padding:12px 14px;color:#624d1f;font-size:.88rem}
+    @media(max-width:800px){.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero{padding:43px 0}.hero-card{max-width:520px}.grid{grid-template-columns:repeat(2,1fr)}nav{display:none;position:absolute;top:78px;left:0;right:0;background:white;padding:18px 4%;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}nav.open{display:flex}.menu-btn{display:block}.section-head{align-items:flex-start;flex-direction:column}.search{width:100%;max-width:none}}
+    @media(max-width:540px){.grid{grid-template-columns:1fr}.brand strong{font-size:.9rem}.brand small{font-size:.7rem}.logo{width:42px;height:42px}.hero-card{padding:20px}.pillars{grid-template-columns:1fr 1fr}.wa{right:12px;bottom:12px;padding:11px 14px;font-size:.9rem}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="wrap"><span>Health • Education • Community • Opportunities</span><span>Serving communities in South Sudan and Uganda</span></div></div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="Hopebridge homepage"><span class="logo">H+</span><span><strong>HOPEBRIDGE</strong><small>Health & Education Foundation</small></span></a>
+      <nav id="mainNav"><a href="#home">Home</a><a href="#news">Latest News</a><a href="#about">About Us</a><a href="#contact">Contact</a></nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰ Menu</button>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Information that empowers communities</div>
+          <h1>News, knowledge and hope for every community.</h1>
+          <p>Explore health guidance, education updates, community stories and opportunities that help people make informed decisions and build brighter futures.</p>
+          <div class="actions"><a class="btn btn-gold" href="#news">Explore latest updates ↓</a><a class="btn btn-light" href="#about">About Hopebridge</a></div>
+          <div class="quick-tags"><span class="tag">Health</span><span class="tag">Education</span><span class="tag">Community</span><span class="tag">Opportunities</span></div>
+        </div>
+        <aside class="hero-card"><div class="big">🌱</div><h2>Knowledge creates possibility</h2><p>Our goal is to share accessible information and highlight initiatives that support healthier lives and stronger learning communities.</p></aside>
+      </div>
+    </section>
+    <section id="news">
+      <div class="wrap">
+        <div class="section-head"><div><h2>Latest news & updates</h2><p>Starter stories are examples. Replace them with verified, current reporting before launch.</p></div><input class="search" id="searchInput" type="search" placeholder="Search articles…" aria-label="Search articles"></div>
+        <div class="filters" id="filters">
+          <button class="filter active" data-category="All">All updates</button><button class="filter" data-category="Health">Health</button><button class="filter" data-category="Education">Education</button><button class="filter" data-category="Community">Community</button><button class="filter" data-category="Opportunities">Opportunities</button>
+        </div>
+        <div class="grid" id="articleGrid" aria-live="polite"></div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="wrap about-grid">
+        <div><div class="eyebrow" style="color:var(--green2)">Who we are</div><h2 style="font-size:clamp(1.8rem,4vw,2.5rem);line-height:1.16;margin:10px 0 15px">A bridge to better health, learning and opportunity.</h2><p style="color:var(--muted)">Hopebridge Health & Education Foundation aims to support communities through useful information, education-focused initiatives and health awareness. This website can grow into a trusted hub for local stories, public-interest updates and opportunities.</p><p style="color:var(--muted)">Please update this introduction to match the foundation's officially approved mission and registration status.</p><a class="btn btn-green" href="#contact">Get in touch</a></div>
+        <div class="about-panel"><h3>What you’ll find here</h3><div class="pillars"><div class="pillar"><strong>Health</strong><span>Awareness, prevention and reliable health information.</span></div><div class="pillar"><strong>Education</strong><span>Learning resources, school updates and student support.</span></div><div class="pillar"><strong>Community</strong><span>Local initiatives, voices and positive change.</span></div><div class="pillar"><strong>Opportunities</strong><span>Scholarships, training, grants and relevant calls.</span></div></div></div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <div class="section-head"><div><h2>Contact Hopebridge</h2><p>Have a story, a question, or an opportunity to share? Reach out.</p></div></div>
+        <div class="contact-grid">
+          <div class="contact-card"><h3>Let’s connect</h3><p>We welcome community updates, corrections, partnership enquiries and education or health-related stories. Please provide contact details below before publishing the website.</p><div class="contact-list"><a id="emailLink" href="mailto:info@hopebridgehealthandeducation.org">✉ info@hopebridgehealthandeducation.org</a><a id="phoneText" href="https://wa.me/211923381390">☎ +211 923 381 390</a><a href="#news">↗ Browse latest updates</a></div><p class="form-note">For urgent medical concerns, contact a qualified health professional or local emergency service.</p></div>
+          <div class="contact-card"><h3>Send a message</h3><form id="contactForm"><div><label for="senderName">Your name</label><input id="senderName" name="name" required placeholder="Full name"></div><div><label for="senderEmail">Your email</label><input id="senderEmail" name="email" type="email" required placeholder="you@example.com"></div><div><label for="senderMessage">Message</label><textarea id="senderMessage" name="message" required placeholder="How can we help?"></textarea></div><button class="btn btn-gold" type="submit">Prepare email message ↗</button><p class="form-note">This opens your email app. Add your official email address in the setup instructions below.</p></form></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap"><span>© <span id="year"></span> Hopebridge Health & Education Foundation</span><span>Inform • Educate • Empower</span></div></footer>
+  <a class="wa" id="whatsappLink" href="#contact" target="_blank" rel="noopener">☏ WhatsApp us</a>
+  <div class="modal" id="articleModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><article class="modal-content"><button class="close" id="closeModal" aria-label="Close article">✕</button><div class="meta" id="modalMeta"></div><h2 id="modalTitle"></h2><div id="modalBody"></div><p class="notice">Editorial note: Verify names, dates, figures and claims with reliable sources before publishing. This demo article is general information, not professional medical or legal advice.</p></article></div>
+  <script>
+    // WEBSITE SETUP: replace the placeholder email and WhatsApp number below.
+    const SITE_EMAIL = "info@hopebridgehealthandeducation.org";
+    const WHATSAPP_NUMBER = "211923381390"; // International format without +, spaces or dashes.
+
+    const articles = [
+      {id:1,category:"Health",date:"Starter article",title:"Simple steps that can support a healthier community",summary:"A sample public-health explainer about hygiene, prevention and finding trusted health information.",body:["Healthy communities are supported by access to reliable information, safe water, good hygiene and timely care from qualified health workers.","For health concerns, use guidance from recognised public-health authorities and local health professionals. Avoid sharing unverified medical claims or personal patient information online.","This is placeholder content for the website demonstration. Replace it with a reviewed article and include sources, publication date and author."],icon:"✚"},
+      {id:2,category:"Education",date:"Starter article",title:"Why supporting learners goes beyond school fees",summary:"A sample feature about school materials, attendance and the role communities can play in education.",body:["Learning can be affected by many practical barriers, including books, stationery, uniforms, transport and meals. Community organisations can work with families and schools to understand which needs are most urgent.","Any support programme should protect children's privacy and dignity, obtain appropriate consent for photographs or stories, and explain how donations are used.","This is placeholder content. Add verified local details, interviews with consent and links to relevant education sources before publishing."],icon:"✎"},
+      {id:3,category:"Community",date:"Starter article",title:"Local stories can help communities share solutions",summary:"A sample community-news post showing how local initiatives and resident voices can be highlighted.",body:["Community reporting can spotlight practical solutions, local services and the experiences of people who are often left out of public discussion.","When reporting a story, speak to more than one relevant source, check facts, respect privacy and give people a fair opportunity to respond to serious allegations.","This is placeholder content. Replace it with a real, fact-checked community story and identify the sources used."],icon:"◎"},
+      {id:4,category:"Opportunities",date:"Starter article",title:"How to prepare before applying for a scholarship or grant",summary:"A sample checklist for applicants looking for education, training or community-development support.",body:["Before applying, confirm the organisation's official website, eligibility rules, deadline, required documents and whether any fees are legitimate. Be cautious of requests to pay an individual to guarantee an award.","Prepare a clear statement of purpose, accurate contact details and any required supporting documents. Keep copies of what you submit and note the deadline.","This is general guidance, not a current funding announcement. Only publish specific opportunities after checking them with the official provider."],icon:"↗"},
+      {id:5,category:"Health",date:"Starter article",title:"How to check whether health information is trustworthy",summary:"A sample guide to checking sources before forwarding health news or advice.",body:["Look for the original source, publication date, named experts and supporting evidence. Compare important claims with guidance from recognised health authorities.","Be cautious with miracle cures, alarming headlines and posts that ask you to forward a message urgently. Do not stop prescribed treatment based on a social-media post.","This sample is for demonstration. Add links to current, authoritative sources before publishing."],icon:"✓"},
+      {id:6,category:"Education",date:"Starter article",title:"Digital skills can open new learning pathways",summary:"A sample story on basic digital skills and safe access to online learning resources.",body:["Digital skills can help learners search for information, communicate, prepare documents and explore online courses. Access to a device, connectivity and a supportive learning environment all matter.","Learners should protect passwords, be careful with personal information and check whether a course or certificate is recognised before paying any fee.","This is placeholder content. Replace with a sourced story about a real programme or learning resource."],icon:"⌘"}
+    ];
+    let activeCategory = "All";
+    const grid = document.getElementById("articleGrid");
+    const searchInput = document.getElementById("searchInput");
+    function renderArticles(){
+      const term = searchInput.value.trim().toLowerCase();
+      const shown = articles.filter(a => (activeCategory==="All" || a.category===activeCategory) && (a.title+" "+a.summary+" "+a.category).toLowerCase().includes(term));
+      grid.innerHTML = "";
+      if(!shown.length){grid.innerHTML='<div class="empty">No articles match that search. Try another keyword or category.</div>';return;}
+      shown.forEach(a=>{
+        const card=document.createElement("article");card.className="article";
+        card.innerHTML=`<div class="article-art"><span>${a.icon} &nbsp; ${a.category}</span></div><div class="article-body"><div class="meta">${a.date} · ${a.category}</div><h3>${a.title}</h3><p>${a.summary}</p><button class="read" data-open="${a.id}">Read article →</button></div>`;
+        grid.appendChild(card);
+      });
+      grid.querySelectorAll("[data-open]").forEach(btn=>btn.addEventListener("click",()=>openArticle(Number(btn.dataset.open))));
+    }
+    function openArticle(id){
+      const a=articles.find(x=>x.id===id);if(!a)return;
+      document.getElementById("modalMeta").textContent=a.date+" · "+a.category;
+      document.getElementById("modalTitle").textContent=a.title;
+      const body=document.getElementById("modalBody");body.innerHTML="";
+      a.body.forEach(p=>{const el=document.createElement("p");el.textContent=p;body.appendChild(el);});
+      document.getElementById("articleModal").classList.add("open");document.body.style.overflow="hidden";
+    }
+    function closeArticle(){document.getElementById("articleModal").classList.remove("open");document.body.style.overflow="";}
+    document.querySelectorAll(".filter").forEach(btn=>btn.addEventListener("click",()=>{activeCategory=btn.dataset.category;document.querySelectorAll(".filter").forEach(b=>b.classList.toggle("active",b===btn));renderArticles();}));
+    searchInput.addEventListener("input",renderArticles);
+    document.getElementById("closeModal").addEventListener("click",closeArticle);
+    document.getElementById("articleModal").addEventListener("click",e=>{if(e.target.id==="articleModal")closeArticle();});
+    document.addEventListener("keydown",e=>{if(e.key==="Escape")closeArticle();});
+    document.getElementById("menuBtn").addEventListener("click",()=>document.getElementById("mainNav").classList.toggle("open"));
+    document.querySelectorAll("#mainNav a").forEach(a=>a.addEventListener("click",()=>document.getElementById("mainNav").classList.remove("open")));
+    document.getElementById("year").textContent=new Date().getFullYear();
+    const emailLink=document.getElementById("emailLink");
+    if(SITE_EMAIL && !SITE_EMAIL.startsWith("ADD-")){emailLink.href="mailto:"+SITE_EMAIL;emailLink.textContent="✉ "+SITE_EMAIL;}
+    const wa=document.getElementById("whatsappLink");
+    if(WHATSAPP_NUMBER){wa.href="https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent("Hello Hopebridge Health & Education Foundation, I would like to get in touch.");}
+    else {wa.href="#contact";wa.addEventListener("click",e=>{e.preventDefault();alert("Please add the foundation's WhatsApp number in index.html before publishing. See the website setup guide.");});}
+    document.getElementById("contactForm").addEventListener("submit",e=>{
+      e.preventDefault();
+      if(!SITE_EMAIL || SITE_EMAIL.startsWith("ADD-")){alert("Please add the foundation's official email address in index.html first.");return;}
+      const name=document.getElementById("senderName").value.trim(),from=document.getElementById("senderEmail").value.trim(),message=document.getElementById("senderMessage").value.trim();
+      location.href="mailto:"+SITE_EMAIL+"?subject="+encodeURIComponent("Website enquiry from "+name)+"&body="+encodeURIComponent("Name: "+name+"\nReply email: "+from+"\n\n"+message);
+    });
+    renderArticles();
+  </script>
+</body>
+</html>
